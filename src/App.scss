@@ -1,0 +1,49 @@
+@import 'variables';
+
+
+#navBar {
+  margin: 0;
+  position: relative;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid $backgroundColor;
+    background-color: $backgroundColor;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  li a:hover:not(.active) {
+    color: $navBarHoverColor;
+    outline: 0;
+  }
+  li a.active {
+    color: $navBarHoverColor;
+    background-color: $backgroundColor;
+    outline: 0;
+  }
+  li a:focus {
+    color: $navBarHoverColor;
+    outline: 0;
+  }
+}
+
+#navBar-right {
+  float: right;
+  display: block;
+}

@@ -1,0 +1,87 @@
+@import 'variables';
+
+#about-root {
+  background-color: $backgroundColor;
+}
+
+.select-player {
+  font-family: $orbitronFont;
+  text-align: center;
+  padding: 25px;
+  color: $glowyWhiteTextColor;
+  text-shadow: 1px 1px 5px $highlightTextColor;
+}
+
+.profile {
+  @extend %cardStyle;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile:hover {
+  box-shadow: 0 4px 6px 0 $cardBorderColor;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#name {
+  font-size: 30px;
+  font-family: $ralewayFont;
+  letter-spacing: 2px;
+}
+
+#title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: $ralewayFont;
+}
+
+
+.stats {
+  background-color: rgba(4,5,9,0.6);
+  margin-top: 50px;
+  border: 1px solid $cardBorderColor;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.caption {
+  color: $glowyWhiteTextColor;
+  font-family: $orbitronFont;
+  text-align: center;
+  padding: 25px;
+  color: $glowyWhiteTextColor;
+  text-shadow: 1px 1px 5px $highlightTextColor;
+}
+
+.language-label {
+  color: $glowyWhiteTextColor;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+svg {
+  margin-bottom: 8px;
+}
+
+
+.tools {
+  @extend %cardStyle;
+}
+
+.specialty {
+  @extend %cardStyle;
+}
+
+.interests {
+  @extend %cardStyle;
+}

@@ -1,0 +1,29 @@
+$navBarColor: #303030;
+$navBarHoverColor: #FEFCD7;
+$glowyWhiteTextColor: #E6EAED;
+$highlightTextColor: #03FEFE;
+$cardBorderColor: #528398;
+$backgroundColor: #0C161F;
+
+$iconWidth: 30px;
+$iconHeight: 30px;
+
+// Google Font
+$orbitronFont: 'Orbitron', sans-serif;
+$ralewayFont: 'Raleway', sans-serif;
+
+// Card Style
+%cardStyle {
+  background-color: rgba(4,5,9,0.6);
+  color: $glowyWhiteTextColor;
+  padding: 25px;
+  border: 1.5px solid $cardBorderColor;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 $cardBorderColor;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
